@@ -677,7 +677,14 @@ const EventTypePage = (props: inferSSRProps<typeof getServerSideProps>) => {
               <Form
                 form={formMethods}
                 handleSubmit={async (values) => {
-                  const { periodDates, periodCountCalendarDays, smartContractAddress, beforeBufferTime, afterBufferTime, ...input } = values;
+                  const {
+                    periodDates,
+                    periodCountCalendarDays,
+                    smartContractAddress,
+                    beforeBufferTime,
+                    afterBufferTime,
+                    ...input
+                  } = values;
 
                   updateMutation.mutate({
                     ...input,
