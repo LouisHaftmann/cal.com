@@ -1597,6 +1597,8 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
       requiresConfirmation: true,
       disableGuests: true,
       minimumBookingNotice: true,
+      beforeEventBuffer: true,
+      afterEventBuffer: true,
       slotInterval: true,
       team: {
         select: {
